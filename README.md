@@ -14,6 +14,10 @@
 ## Note
 
 - Supports termux and terminal emulator only!
+
+# [Download](https://github.com/Asteroid21/NRxKILL/files/11599928/NR-KILL.Root.zip) (Magisk Module)
+
+
  
 ## Credits
 
