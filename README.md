@@ -4,7 +4,7 @@
  
  1. Open termux
  2. pkg update -y && pkg upgrade -y && pkg install git -y
- 3. git clone -
+ 3. git clone https://github.com/Asteroid21/NRxKILL
  4. su (enter)
  5. cd NRxKILL
  6. chmod +x run
