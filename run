@@ -1,0 +1,33 @@
+#!/system/bin/sh
+echo ""
+echo "**************************************"
+echo "* RiProG Open Source @ RiOpSo   *"
+echo "**************************************"
+echo "*  Muhammad Rizki @ RiProG      *"
+echo "**************************************"
+echo ""
+
+sleep 2
+
+echo ""
+echo " NR-KILL Root By @Asteroid_21"
+echo " Original Module by @RiProG"
+echo ""
+echo "Killing app"
+echo ""
+sleep 3
+
+if [[ ! $(cmd -l | grep activity) ]]; then
+echo "Not Supported"
+exit
+fi
+
+sleep 2
+
+for app in $(cmd package list packages | cut -f 2 -d ":"); do
+if [[ ! "$app" == "com.termux" ]] && [[ ! "$app" == "jackpal.androidterm" ]]; then
+echo "Force stopping $app"
+cmd activity force-stop "$app"
+echo ""
+fi
+done
